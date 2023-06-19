@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="./style.css">
     <title>CASTFORM</title>
 </head>
-<body>
-    <header>CastForm Report</header>
 
+<body class="main">
+    <header style="text-align: center;">CastForm Report</header>
+    <div class="container">
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Enter City">
+            <button id="button">Search</button>
+        </div>
 
+        <div id="history"></div>
+        <div id="current-weather">
+            <div id="city-name"></div>
+            <div id="date"></div>
+            <img id="weather-icon">
+            <div id="temperature"></div>
+            <div id="humidity"></div>
+            <div id="wind-speed"></div>
+        </div>
+        <div id="forecast"></div>
+    </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
-    
 </body>
+
 </html>
